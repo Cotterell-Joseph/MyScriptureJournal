@@ -17,7 +17,6 @@ namespace MyScriptureJournal.Models
         public int Chapter { get; set; }
         [Range(1, 200)]
         public int Verse { get; set; }
-        [RegularExpression(@"^[A-Z]+[a-zA-Z0-9""'\s-]*$")]
         public string Note { get; set; }
         [Display(Name = "Date Entered")]
         [DataType(DataType.Date)]

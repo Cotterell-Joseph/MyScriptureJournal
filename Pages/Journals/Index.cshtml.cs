@@ -45,12 +45,12 @@ namespace MyScriptureJournal.Pages.Journals
 
             if (!string.IsNullOrEmpty(SearchString))
             {
-                journals = journals.Where(s => s.Note.Contains(SearchString));
+                sortedJournal = sortedJournal.Where(s => s.Note.Contains(SearchString));
             }
 
             if (!string.IsNullOrEmpty(JournalBook))
             {
-                journals = journals.Where(x => x.Book == JournalBook);
+                sortedJournal = sortedJournal.Where(x => x.Book == JournalBook);
             }
 
             switch (sortOrder)
